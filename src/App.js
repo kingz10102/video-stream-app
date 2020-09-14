@@ -1,6 +1,7 @@
 import React from 'react';
 import Heading from './components/Heading';
 import NavBar from './components/NavBar';
+import Results from './components/Results';
 import './App.css';
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      {/* Navbar */}
      <NavBar/>
      {/* Results */}
+     <Results/>
     </div>
   );
 }

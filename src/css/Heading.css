@@ -6,9 +6,28 @@
     align-items: center;
     background-color: black;
     overflow: scroll;
+}
 
+.heading__icon > .MuiSvgIcon-root {
+    font-size: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.heading__icon > p {
+    display: none;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: small;
+    letter-spacing: 3px;
 
 }
+.heading__icon:hover > p {
+    display: inline;
+}
+
 
 .heading > h2 {
     object-fit: contain;

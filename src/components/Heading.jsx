@@ -10,7 +10,7 @@ function Heading() {
     return (
         <div className="heading">
             <div className="heading__icons">
-                <div className="heading__icon">
+                <div className="heading__icon heading__icon--active">
                 <HomeIcon/>
                 <p>Home</p>
                 </div>

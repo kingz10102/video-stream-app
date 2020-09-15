@@ -1,5 +1,4 @@
 import React from 'react';
-
 import HomeIcon from '@material-ui/icons/Home';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
 import YoutubeSearchedForIcon from '@material-ui/icons/YoutubeSearchedFor';
@@ -31,7 +30,7 @@ function Heading() {
                 <p>Account</p>
                 </div>
             </div>
-            <h2>Remarkable Flickz</h2>
+            <h1>Remarkable Flickz</h1>
         </div>
     )
 }

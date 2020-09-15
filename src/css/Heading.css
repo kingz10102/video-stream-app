@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Permanent+Marker&display=swap');
+
 .heading {
-    color: red;
+    color: rgba(250, 57, 43, 0.623);
     display: flex;
     padding: 20px;
     justify-content: space-between;
     align-items: center;
     overflow: scroll;
+    font-family: 'Amatic SC', cursive;
+    font-size: x-large;
 }
 
 .heading__icon > .MuiSvgIcon-root {
@@ -19,7 +23,7 @@
     text-transform: uppercase;
     margin-right: auto;
     margin-left: auto;
-    font-size: small;
+    font-size: large;
     letter-spacing: 3px;
 
 }

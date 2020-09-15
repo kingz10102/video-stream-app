@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Permanent+Marker&display=swap');
+
 .navbar {
     display: flex;
     overflow-x: scroll;
     color: #ffffff;
     padding: 10px;
     padding-left: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-size: large;
 }
 
 .navbar {

@@ -1,31 +1,35 @@
 import React, { useEffect, useState } from 'react';
 import VideoCard from '../components/VideoCard';
+import FlipMove from 'react-flip-move';
 import '../css/Results.css';
 import axios from '../axios';
-import requests from '../requests';
 
-function Results() {
+
+
+function Results({ chosenOption }) {
     
     const [movies, setMovies] = useState([]);
     
     // this hooks makes this code to run everytime results loads or mounts
         useEffect(() => {
             async function fetchData() {
-                const request = await axios.get(requests.fetchActionMovies)
+                const request = await axios.get(chosenOption); 
                 // console.log(request)
                 setMovies(request.data.results);
                 return request;
             }
 
             fetchData();
-        }, []);
+        }, [chosenOption]);
     
     
     return (
         <div className="results">
+            <FlipMove>
             {movies.map((movie) => (
-                <VideoCard movie={movie}/>
+                <VideoCard key={movie.id} movie={movie}/>
             ))}
+            </FlipMove>
            
         </div>
     );
